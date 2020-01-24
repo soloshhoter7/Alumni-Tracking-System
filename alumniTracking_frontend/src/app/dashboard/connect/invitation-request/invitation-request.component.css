@@ -1,0 +1,13 @@
+.request-buttons{
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 10px;
+}
+
+.invitation-image{
+    border-radius:50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}

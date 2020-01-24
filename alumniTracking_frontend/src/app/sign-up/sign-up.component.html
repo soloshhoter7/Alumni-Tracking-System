@@ -1,0 +1,167 @@
+<body>
+    <div class="card">
+        <div class="card-header" style="text-align: center;">
+            <img class="sign-up-logo" src="../../assets/icons/ats_logo.png" width="60px" height="60px">
+            <h4 style="color: gray; margin-top: 7px;">Sign Up to ATS</h4>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="../../assets/icons/one.png" class="step-count-image" alt="step 1" width="40px" height="40px">
+                    <div style="text-align: center; color: gray; margin-bottom: 5px;">
+                        Login Details
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="../../assets/icons/two.png" class="step-count-image" alt="step 2" width="40px" height="40px">
+                    <div style="text-align: center; color: gray; margin-bottom: 5px;">
+                        Personal Details
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="../../assets/icons/three.png" class="step-count-image" alt="step 3" width="40px" height="40px">
+                    <div style="text-align: center; color: gray; margin-bottom: 5px;">
+                        Verification
+                    </div>
+                </div>
+            </div>
+            <mat-progress-bar mode="determinate" [value]="progressbarValue"></mat-progress-bar>
+        </div>
+        <div class="card-body">
+
+            <!-- login-information-form -->
+            
+                <!-- 1st form  -->
+
+            <div *ngIf="progressbarValue==1"class="login-information">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <form class="form-signin" style="padding: 10px;">
+                            <div class="form-group">
+                              <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+                            </div>
+              
+                            <div class="form-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                              </div>
+
+                            <div class="form-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>  
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Retype Password" required>  
+                            </div>
+                            <button class="btn btn-outline-success nextButton" (click)="increaseProgressBar()">Next</button>
+                          </form>
+                    </div>
+                    <div class="col-sm-3"></div>
+                    
+                </div>
+                
+                    
+                
+            </div>
+            
+            <!-- personal Information -->
+                 <!-- 2nd form  -->
+            <div *ngIf="progressbarValue==34" class="personal-information">
+                <form class="form-signin" style="padding: 10px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="inputName" class="form-control" placeholder="Full Name" required autofocus>
+                          </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="date" id="inputDateOfBirth" class="form-control" placeholder="Date Of Birth" required>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select class="dropdown-styling">
+                                <option value="">Gender</option>
+                                <option value="male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                              </select>
+                          </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="number" id="inputPhoneNumber" class="form-control" placeholder="Phone Number" required>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="inputCollege" class="form-control" placeholder="College Name" required>
+                          </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="number" id="inputRollNumber" class="form-control" placeholder="College Roll Number" required>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select class="dropdown-styling">
+                                <option value="">Branch</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="Mechanical">Mechanical</option>
+                              </select>
+                          </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="dropdown-styling">
+                            <option value="">Batch</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-sm-6">
+                        <select class="dropdown-styling">
+                            <option value="">Marital Status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Other">Other</option>
+                          </select>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center ">
+                    <button *ngIf="!progressbarValue==0"class="btn btn-outline-danger personal-detail-button float-right" (click)="decreaseProgressBar()">Previous</button>
+                    <button class="btn btn-outline-success personal-detail-button float-right" (click)="increaseProgressBar()">Next</button>
+                </div>
+                </form>
+            </div>
+            <!-- verification-display  -->
+            <!-- 3rd div  -->
+            <div *ngIf="progressbarValue==67" class="verification-display">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                   <img src="../../assets/images/verify.png" class="verification-image">
+                   <div style="text-align: center; margin-top: 10px;">
+                    <h5>Please Wait..</h5>
+                    <h4 style="color: gray;"> We will send a Verification Email to the Registered Email Address</h4>
+                   </div>
+                    
+                    </div>
+                    <div class="col-sm-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

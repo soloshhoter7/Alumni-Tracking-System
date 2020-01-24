@@ -1,0 +1,17 @@
+
+<div class="incoming_msg" *ngIf="incomingMessage" >
+    <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+    <div class="received_msg">
+      <div class="received_withd_msg">
+        <b>{{ chatMessage.senderUsername}}</b>
+         &emsp;
+        <p> {{ chatMessage.message }}</p>
+     </div>
+    </div>
+</div>
+    
+    <div class="outgoing_msg" *ngIf="outgoingMessage">
+    <div class="sent_msg">
+      <p> {{ chatMessage.message }}</p>
+    </div>
+    </div>

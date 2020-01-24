@@ -1,0 +1,69 @@
+.mainrow{
+    margin-top: 30px;
+}
+.boxsize{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+.editprofile{
+    font-size: 16px;
+    line-height: 1;
+    color: rgba(0,0,0,.6);
+    font-weight: 500;
+}
+.editprofile:hover{
+    text-decoration: none;
+}
+.font-bold{
+    font-weight: 500;
+}
+.dropdownstyling{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.btn-more{
+    padding: 5px 12px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    color: grey;
+}
+.btn-more:hover{
+    background-color: rgba(207,207,207,.25);
+    color: rgba(0,0,0,.75);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.9);
+}
+.text-blue{
+    color:rgb(47, 161, 199);
+}
+.text-blue:hover{
+    text-decoration: none;
+}
+.card-spacing{
+    margin-top: 20px;
+}
+.img-styling{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+.row-spacing{
+    margin-top: 10px;
+}
+.profile-edit-picture{
+    z-index: 1000;
+    border-radius: 50%;
+    margin-top: -110px;
+    width: 130px;
+    height: 130px;
+    margin-left: 5px;
+}

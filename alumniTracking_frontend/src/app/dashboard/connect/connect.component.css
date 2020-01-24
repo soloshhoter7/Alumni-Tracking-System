@@ -1,0 +1,66 @@
+.text-right{
+    text-align:end;
+}
+.text-left{
+    text-align:left;
+    padding-left: 5px;
+    color:gray;
+}
+.plus-css{
+  padding-left: 0;
+}
+.card-spacing{
+    margin-top: 15px;
+}
+.group-styling{
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image-styling{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.invitation-image{
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+}
+.request-buttons{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-join{
+    border: 1px solid #0073b1;
+    color: #0073b1;
+    background: none;
+    padding: 2px 15px;
+}
+.btn-join:hover{
+    background-color: #57add3;
+}
+
+.btn-decline{
+    border: 1px solid #800d1a;
+    color: #800d1a;
+    background: none;
+    padding: 2px 15px;
+}
+.btn-decline:hover{
+    background-color: #D50B31;
+}
+.tuples{
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.tuples:hover{
+    background:#f6f8fa;
+}
+.manage-network-links{
+    text-decoration: none;
+}

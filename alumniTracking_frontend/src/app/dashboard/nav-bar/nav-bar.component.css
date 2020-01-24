@@ -1,0 +1,29 @@
+.nav{
+    margin-bottom:20px;
+}
+.search{
+    margin-right: 50px; 
+    width: 600px;
+    margin-left:80px;
+    padding-top:12px;
+   }
+   .search-button{
+       margin-right:0;
+   }
+   .search-field{
+       width: 380px;
+   }
+   .container{
+       margin-left: 5px;;
+   }
+   .nav-link{
+       text-align: center;
+       margin-right: 10px;
+   }
+   .profileImage-nav{
+       width: 24px;
+       height: 24px;
+       border-radius: 50%;
+       margin-top:0;
+       padding:0;
+   }

@@ -1,0 +1,49 @@
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../assets/icons/ats_logo.png" width="50px" height="50px"> Alumni Tracking System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="search">
+            <form class="form-inline ">
+              <input class="form-control mr-sm-2 search-field" type="search" width="48" placeholder="Search ATS.." aria-label="Search">
+              <button class="btn btn-outline-primary my-2 my-sm-0 search-button" type="submit">Search</button>
+            </form>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/dashboard/feed']">Feed
+              <img class="navbar-icons" src="../assets/icons/Home.png" width="20px" height="20px">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/dashboard/connect']">Connect 
+              <img src="../assets/icons/link.png" class="navbar-icons" width="20px" height="20px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/dashboard/messaging']">Messaging
+               <img src="../assets/icons/chat.png" class="navbar-icons" width="20px" height="20px">
+              </a>
+          </li>
+          <!-- --------------------------------------------------------------------------- -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alerts<img src="../assets/icons/notification.png"  width="20px" height="20px"></a>
+            <app-alerts></app-alerts>
+          </li>
+
+
+            <!-- ---------------------------------------------------------------------------------- -->
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/dashboard/profile']">Me<img class="profileImage-nav" src="../assets/icons/default-user-image-male.png" ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ 

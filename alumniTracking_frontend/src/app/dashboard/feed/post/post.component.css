@@ -1,0 +1,58 @@
+.card{
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+}
+.card-header{
+    padding: 4px;
+}
+.card-body{
+    padding:5px;
+}
+.post-user-name{
+    margin-top: 10px;
+    margin-bottom: -23px;
+}
+.social-buttons{
+    border-radius: 15px;
+    border:none;
+    width:auto;
+    background-color: #d9e7eb;
+    margin-right:15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.social-buttons:hover{
+    background-color: #c5d2d5;
+}
+.social-icons{
+    width: 20px;
+    height: 20px;
+    margin:5px;
+}
+.like-count-display{
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+.show-like-count{
+    font-size: 15px;
+    color:gray;
+}
+.post-user-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.postImage{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.open-menu{
+    border: none;
+    background: none;
+    margin-top: 10px;
+    margin-left: 50px;
+}

@@ -1,0 +1,7 @@
+<!-- html for typing the message -->
+<div class="type_msg">
+    <div class="input_msg_write">
+      <input type="text" class="write_msg" [(ngModel)]="messageText" placeholder="Type a message" (keydown)="handleSubmit($event)" />
+      <button class="msg_send_btn" type="button" (click)="sendMessage()"><img src="../../../../assets/icons/send.png" height="15px" width="15px"></button>
+    </div>
+  </div>

@@ -1,0 +1,86 @@
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #1E457C;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+.mat-progress-bar{
+    display: block;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 250ms linear;
+    width: 100%;
+    border-radius: 10px;
+}
+.card{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+input{
+    padding:25px;
+    border-radius: 25px;
+    background: #f2f2f2;
+}
+.nextButton{
+    padding: 10px;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.verification-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    margin-top: 17px;
+}
+.step-count-image{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.sign-up-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personal-detail-button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+.dropdown-styling{
+    width: 100%;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+option{
+    padding-top:5px
+}
